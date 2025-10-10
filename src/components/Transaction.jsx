@@ -65,6 +65,8 @@ export default function Transaction({transaction}){
 }
 
 export function CaluclateTotal(transaction = []){
+      if (!Array.isArray(transaction)) transaction = [];
+
         const totalIncome = transaction
         .filter(txn => txn.type === "income")
         .reduce((sum,txn)=> sum + txn.amount, 0)
