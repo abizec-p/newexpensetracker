@@ -66,6 +66,8 @@ export default function Transaction({transaction}){
 }
 
 export function CaluclateTotal(transaction = []){
+        console.log("transaction:", transaction); // <-- inspect value
+
       if (!Array.isArray(transaction)) transaction = [];
 
         const totalIncome = transaction
