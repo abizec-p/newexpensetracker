@@ -20,7 +20,8 @@ export default function Transaction({transaction}){
                     </div>
             
             <div className="main-transaction-container">
-                {transaction
+                {Array.isArray(transaction) && 
+                transaction
                 .slice()
                 .reverse()
                 
