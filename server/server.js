@@ -7,15 +7,16 @@ const cors = require("cors");
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors({
-origin:"https://expentrackapp.netlify.app",
-methods:["GET","POST","PUT","DELETE"]
-
-}));
+app.use(
+  cors({
+    origin: "https://expentrackapp.netlify.app",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+  })
+);
 app.use(express.json());
 
-
-mongoose.connect(process.env.MONGO_URI)
+mongoose
+  .connect(process.env.MONGO_URI)
   .then(() => console.log("connection done"))
   .catch((err) => console.error("sorry not connected:", err));
 
@@ -30,7 +31,6 @@ const formSchema = new mongoose.Schema({
 const FormData = mongoose.model("FormData", formSchema);
 
 app.post("/api/form", async (req, res) => {
-
   try {
     const newEntry = new FormData(req.body);
     await newEntry.save();
@@ -49,12 +49,10 @@ app.get("/api/form", async (req, res) => {
   }
 });
 
-
-
 app.listen(PORT, () =>
   console.log(`server running at http://localhost:${PORT}`)
 );
 
-app.get("/",(req,res) =>{
-  res.send("Backend is running!")
+app.get("/", (req, res) => {
+  res.send({message : "Backend is running!"});
 });
