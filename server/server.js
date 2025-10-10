@@ -49,6 +49,22 @@ app.get("/api/form", async (req, res) => {
   }
 });
 
+app.delete("/api/form", async (res,req) => {
+  try{
+    const {id} = req.params;
+    await FormData.findByIdAndDelete(id);
+    res.json({message:"successfully deleted!"});
+  }catch(error) {
+    console.error(error);
+    res.status(500).json({message:"sorry, could not delete this"});
+  }
+
+
+
+
+
+});
+
 app.listen(PORT, () =>
   console.log(`server running at http://localhost:${PORT}`)
 );

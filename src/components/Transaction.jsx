@@ -5,7 +5,25 @@ import "./transaction.css"
 
 
 
-export default function Transaction({transaction}){
+export default function Transaction({transaction, setTransaction}){
+
+
+    const handledelete= async (id) => {
+        try{
+            const res = await fetch(`https://newexpensetracker-sz4m.onrender.com/api/form/${id}`,{
+                method: "DELETE",
+            });
+        
+        if(!res.ok) throw new Error("Failed to delete")
+
+setTransaction(prev => prev.filter(txn => txn._id !== id));
+
+
+        } catch(err){
+            console.error(err)
+        }
+
+    }
    
     return(
         <section className="transaction-container">
@@ -47,7 +65,11 @@ export default function Transaction({transaction}){
                         
                         }
                         </div>
+
                             
+                        </div>
+                        <div className="delete-edit">
+                            <button onClick={handledelete}>delete</button>
                         </div>
                     </div>
             )
