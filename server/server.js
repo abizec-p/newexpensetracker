@@ -5,9 +5,13 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
-app.use(cors());
+app.use(cors({
+origin:"https://expentrackapp.netlify.app/",
+methods:["GET","POST","PUT","DELETE"]
+
+}));
 app.use(express.json());
 
 
@@ -50,3 +54,7 @@ app.get("/api/form", async (req, res) => {
 app.listen(PORT, () =>
   console.log(`server running at http://localhost:${PORT}`)
 );
+
+app.get("/",(req,res) =>{
+  res.send("Backend is running!")
+});
