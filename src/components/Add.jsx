@@ -22,11 +22,14 @@ export default function App() {
 
   const handleAddIncome = async () => {
     try {
-      const response = await fetch("https://newexpensetracker-sz4m.onrender.com", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(incomeData),
-      });
+      const response = await fetch(
+        "https://newexpensetracker-sz4m.onrender.com/api/form",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(incomeData),
+        }
+      );
 
       const data = await response.json();
       alert(data.message);
@@ -47,11 +50,14 @@ export default function App() {
 
   const handleAddExpense = async () => {
     try {
-      const response = await fetch("https://newexpensetracker-sz4m.onrender.com", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(expenseData),
-      });
+      const response = await fetch(
+        "https://newexpensetracker-sz4m.onrender.com/api/form",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(expenseData),
+        }
+      );
 
       const data = await response.json();
       alert(data.message);

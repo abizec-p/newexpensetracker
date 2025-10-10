@@ -14,7 +14,7 @@ function App() {
          const [transaction, setTransaction] = useState([]);
 
   useEffect(()=>{
-        fetch("https://newexpensetracker-sz4m.onrender.com")
+        fetch("https://newexpensetracker-sz4m.onrender.com/api/form")
         .then((res)=>res.json())
         .then((data)=> setTransaction(data))
         .catch((err)=> console.log("error fetching : ", err));
