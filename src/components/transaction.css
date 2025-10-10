@@ -1,0 +1,66 @@
+.transaction-container{
+    background-color: white;
+    width: 600px;
+    padding:20px 30px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    height:max-content;
+    max-height: 60vh;
+    overflow-y: scroll;
+}
+
+
+.transaction-heading{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+.transaction-heading-right{
+    display: flex;
+    width: 150px;
+    justify-content: space-evenly;
+    
+}
+
+.main-transaction-container{
+    margin-top: 10px;
+}
+.transaction-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.058);
+}
+.transaction-row h3{
+    font-size: 16px;
+}
+.transaction-row p{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.584);
+}
+
+
+.transaction-income p{
+    color: green;
+    font-weight: bold;
+}
+.transaction-expense p{
+    color: red;
+    font-weight: bold;
+}
+
+.transaction-rightpart{
+    width: 150px;
+    display: flex;
+    justify-content: space-around   ;
+}
+
+@media (max-width:999px) {
+    
+    .transaction-container{
+        width: 90vw;
+        margin: 10px 0;
+    }
+}

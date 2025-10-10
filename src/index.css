@@ -1,0 +1,16 @@
+*{
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body{
+    background-color: rgb(222, 222, 222);
+}
+:root{
+    --blue: rgb(0, 132, 194);
+    --red: rgb(200, 0, 0);
+    --green: green;
+}

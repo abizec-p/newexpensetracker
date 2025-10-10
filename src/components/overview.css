@@ -1,0 +1,43 @@
+.overview{
+    display: flex;
+
+}
+.overview div{
+    margin: 10px 10px;
+        margin-top: 20px;
+
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+        color: white;
+        height: 100px;
+
+}
+
+.overview-income{
+    background-color: green;
+    
+}
+.overview-expense{
+    background-color: var(--red);
+}
+.overview-balance{
+    background-color: var(--blue);
+}
+
+
+@media (max-width:999px) {
+    
+    .overview{
+        width: 90vw;
+    }
+
+    .overview p{
+        font-size: 13px;
+
+    }
+    .overview h1{
+        font-size: 16px;
+    }
+
+}

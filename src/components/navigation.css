@@ -1,0 +1,64 @@
+.nav-bar{
+    background-color: white;
+    height: 97vh;
+    margin: 12px 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-left: 20px;
+    width: 300px;
+}
+
+.nav-header{
+    border-bottom: 1px solid rgb(221, 221, 221);
+    padding: 10px 0;
+}
+.nav-header h1{
+    color: green;
+}
+
+.menu{
+}
+
+.menu div{
+    display: flex;
+    align-items: center;
+
+    padding: 10px 15px ;
+    margin: 15px 0;
+    border-radius: 10px;
+}
+.menu div span{
+    margin-top: 5px;
+    padding-right: 15px;
+}
+.menu div:hover{
+        background-color: rgb(239, 239, 239);
+
+
+}
+
+.nav-login{
+        border-top: 1px solid rgb(195, 195, 195);
+        padding-top: 10px;
+        position: absolute;
+        bottom: 30px;
+
+   display: flex;
+
+   flex-direction: column;
+}
+.nav-login h3{
+
+}
+.nav-login a{
+    font-size: 14px;
+}
+
+
+@media (max-width:1366px) {
+
+    .nav-bar{
+        display: none;
+    }
+    
+}

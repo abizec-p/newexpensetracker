@@ -1,0 +1,121 @@
+.add-button{
+    margin-top: 20px;
+    margin-left: 170px;
+}
+
+.add-button button{
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0.8;
+}
+.add-button button:hover{
+    opacity: 1;
+}
+.add-income-button{
+    background-color: green;
+
+
+
+
+
+}
+.add-expense-button{
+    background-color: var(--red);
+
+}
+
+.modal-background{
+    background-color: rgba(0, 0, 0, 0.46);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal{
+    padding: 20px 20px;
+
+       display: flex;
+    flex-direction: column;
+    background-color: white;
+height: 350px;
+width: 500px;
+border-radius: 10px;
+
+    
+}
+.income-modal,.expense-modal{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.income-modal input,.income-modal select{
+    padding: 10px 10px;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.expense-modal input,.expense-modal select{
+    padding: 10px 10px;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.income-modal button, .expense-modal button{
+      padding: 10px 10px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.close-button{
+    background-color: var(--red);
+    
+}
+.add-income-modal{
+ 
+
+
+}
+
+.add-expense-modal{
+
+
+
+
+}
+
+@media (max-width:999px) {
+    
+    .add-section{
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+    }
+    .add-button{
+        margin: 10px 0;
+        margin-left: 30px;
+    }
+
+    .add-button button{
+        font-size: 12px;
+    }
+}

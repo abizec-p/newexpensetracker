@@ -1,0 +1,40 @@
+.ranking-container{
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 20px;
+    width: 480px;
+    margin-left: 20px;
+    height: 40vh;
+}
+
+.ranking-row{
+    background-color: var(--red);
+    color: white    ;
+    margin: 10px;
+    padding: 10px 20px;
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.ranking-row h1{
+    font-size: 16px;
+
+}
+.ranking-row h3{
+    font-size: 16px;
+    font-weight: 500;
+}
+.ranking-container h2{
+    font-size: 18px;
+    margin-top: -5px;
+}
+
+@media (max-width:999px) {
+    
+    .ranking-container{
+        width: 90vw;
+        margin: 10px 0;
+    }
+}

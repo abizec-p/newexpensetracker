@@ -1,0 +1,20 @@
+.main-container{
+    display: flex;
+}
+.inside-container{
+    display: flex;
+}
+
+@media (max-width:777px) {
+    .main-container{
+        display: flex;
+     flex-direction: column;
+     align-items: center;
+    }
+    .inside-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
