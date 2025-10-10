@@ -1,9 +1,9 @@
 .transaction-container{
     background-color: white;
-    width: 600px;
+    width: 680px;
     padding:20px 30px;
     border-radius: 10px;
-    margin-left: 20px;
+    margin-left: 0px;
     margin-top: 20px;
     height:max-content;
     max-height: 60vh;
@@ -41,7 +41,9 @@
     color: rgba(0, 0, 0, 0.584);
 }
 
-
+.delete-edit button{
+    color: red;
+}
 .transaction-income p{
     color: green;
     font-weight: bold;

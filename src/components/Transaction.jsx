@@ -1,4 +1,6 @@
 import "./transaction.css"
+import { MdDelete } from "react-icons/md";
+
 
 
 
@@ -69,7 +71,7 @@ setTransaction(prev => prev.filter(txn => txn._id !== id));
                             
                         </div>
                         <div className="delete-edit">
-                            <button onClick={handledelete}>delete</button>
+                            <button onClick={handledelete}><MdDelete/></button>
                         </div>
                     </div>
             )
