@@ -1,3 +1,4 @@
+import { API_URL } from "../api";
 import "./transaction.css"
 import { MdDelete } from "react-icons/md";
 
@@ -12,7 +13,7 @@ export default function Transaction({transaction, setTransaction}){
 
     const handledelete= async (id) => {
         try{
-            const res = await fetch(`https://newexpensetracker-sz4m.onrender.com/api/form/${id}`,{
+            const res = await fetch(`${API_URL}/form/${id}`,{
                 method: "DELETE",
             });
         

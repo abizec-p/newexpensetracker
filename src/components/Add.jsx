@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./add.css";
 import { motion, AnimatePresence } from "framer-motion";
+import { API_URL } from "../api";
 
 export default function App() {
   const [isExpenseOpen, setExpenseOpen] = useState(false);
@@ -23,7 +24,7 @@ export default function App() {
   const handleAddIncome = async () => {
     try {
       const response = await fetch(
-        "https://newexpensetracker-sz4m.onrender.com/api/form",
+        `${API_URL}/form`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -51,7 +52,7 @@ export default function App() {
   const handleAddExpense = async () => {
     try {
       const response = await fetch(
-        "https://newexpensetracker-sz4m.onrender.com/api/form",
+        `${API_URL}/form`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
