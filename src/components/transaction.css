@@ -47,6 +47,7 @@
     border: none;
     position: relative;
     right: 5px;
+    margin-right: -20px;
 }
 .transaction-income p{
     color: green;
