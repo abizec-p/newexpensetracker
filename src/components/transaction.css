@@ -43,6 +43,10 @@
 
 .delete-edit button{
     color: red;
+    background-color: none;
+    border: none;
+    position: absolute;
+    right: 5px;
 }
 .transaction-income p{
     color: green;
