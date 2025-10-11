@@ -69,9 +69,7 @@ setTransaction(prev => prev.filter(txn => txn._id !== id));
                         }
                        
                         </div>
-                          <div className="delete-edit">
-                            <button onClick={()=>handledelete(txn._id)}><MdDelete/></button>
-                        </div>
+                         
 
                             
                         </div>
